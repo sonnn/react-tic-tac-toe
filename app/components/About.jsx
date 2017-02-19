@@ -1,8 +1,12 @@
 import React from 'react'
 
+const aboutStyle = {
+  fontSize: '1.4em'
+}
+
 const About = () =>
 (
-  <div>
+  <div style={aboutStyle}>
     <h1>About</h1>
 
     <h2>Technologies</h2>
@@ -15,7 +19,7 @@ const About = () =>
 
       <li><a href="https://github.com/ReactTraining/react-router" target="_blank">React Router</a> - for client-side (browser) routing</li>
       <li><a href="https://react-bootstrap.github.io/" target="_blank">React Bootstrap</a> - for building the UI / make the app responsive</li>
-      <li>Lodash</li>
+      <li><a href="https://lodash.com/" target="_blank">Lodash</a> - for utility library </li>
       <li><a href="http://eslint.org/" target="_blank">ESLint</a> - for ES6 linting using the <a href="http://standardjs.com/" target="_blank">JavaScript Standard Style</a></li>
     </ul>
 
