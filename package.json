@@ -1,0 +1,49 @@
+{
+  "name": "react-tic-tac-toe",
+  "version": "0.1.0",
+  "description": "A React powered Tic Tac Toe game.",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cache",
+    "build": "webpack -p",
+    "lint": "eslint --ext .jsx --ext .js app",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsevdos/react-tic-tac-toe"
+  },
+  "author": "John Tsevdos <tsevdosjohn@gmail.com> (http://tsevdos.me)",
+  "license": "GPL3",
+  "devDependencies": {
+    "babel-core": "6.21.0",
+    "babel-eslint": "7.1.1",
+    "babel-loader": "6.2.10",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-1": "6.16.0",
+    "css-loader": "0.26.1",
+    "eslint": "3.12.2",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-babel": "4.0.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-promise": "3.4.0",
+    "eslint-plugin-react": "6.8.0",
+    "eslint-plugin-standard": "2.0.1",
+    "html-webpack-plugin": "2.24.1",
+    "mobx-react-devtools": "4.2.10",
+    "style-loader": "0.13.1",
+    "webpack": "1.14.0",
+    "webpack-dev-server": "1.16.2"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "mobx": "2.7.0",
+    "mobx-react": "4.0.4",
+    "react": "15.4.1",
+    "react-bootstrap": "0.30.7",
+    "react-dom": "15.4.1",
+    "react-router": "3.0.0",
+    "react-router-bootstrap": "0.23.1"
+  }
+}

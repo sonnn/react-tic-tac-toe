@@ -1,0 +1,23 @@
+
+Design Patterns - Best Practises
+* Centralize state / store - no component state (MObx)
+ - Explain Classes
+ - The App Store object is a simple singleton with the entire app/game state
+
+* Smart and presentational (stateless) components (http://tsevdos.github.io/presentations/react-mobx-2017/index.html#/3/1) - https://github.com/krasimir/react-in-patterns/tree/master/patterns/presentational-and-container
+ - Containers components
+ - Stateless (presentational) components
+* Layouts
+ - layout containers for UI layouts (curently 1 but we can easily add more)
+* configuration / helpers
+* index files collect all modules/components for easier access and organization
+* CSS modules ()
+
+Design desicions
+- Mobx, central store and objects
+ - pure ES6 Objects. Keep the
+ - Observable pattern
+ - Business logic
+
+LOdash
+
