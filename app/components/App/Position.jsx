@@ -1,13 +1,24 @@
 import React, { PropTypes } from 'react';
-import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import { display } from 'helpers/BoardHelper';
 
+const iconStyle = {
+  cursor: 'pointer',
+  display: 'block',
+  width: '100%',
+  padding: '0.2em',
+  textAlign: 'center',
+  background: 'rgba(0, 0, 0, 0.04)',
+  fontSize: '8em'
+};
+
 const Position = ({ pos, marker, handleMarkPosition }) =>
 (
-  <Button bsSize="large" block onClick={handleMarkPosition.bind(null, pos)}>
-    <Glyphicon glyph={display(marker)} />
-  </Button>
+    <Glyphicon
+      style={iconStyle}
+      glyph={display(marker)}
+      onClick={handleMarkPosition.bind(null, pos)}
+    />
 );
 
 Position.propTypes = {

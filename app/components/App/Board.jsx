@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Position from './Position';
@@ -10,7 +9,7 @@ const rowStyle = {
 
 const Board = ({ board, handleMarkPosition }) =>
 (
-  <Grid>
+  <div>
     <Row style={rowStyle}>
       <Col xs={4}><Position pos={1} marker={board.pos1} handleMarkPosition={handleMarkPosition} /></Col>
       <Col xs={4}><Position pos={2} marker={board.pos2} handleMarkPosition={handleMarkPosition} /></Col>
@@ -26,7 +25,7 @@ const Board = ({ board, handleMarkPosition }) =>
       <Col xs={4}><Position pos={8} marker={board.pos8} handleMarkPosition={handleMarkPosition} /></Col>
       <Col xs={4}><Position pos={9} marker={board.pos9} handleMarkPosition={handleMarkPosition} /></Col>
     </Row>
-  </Grid>
+  </div>
 );
 
 Board.propTypes = {

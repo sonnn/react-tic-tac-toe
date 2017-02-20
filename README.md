@@ -8,12 +8,13 @@
 
 You can view the app [live from Github.io](http://tsevdos.github.io/react-tic-tac-toe). The game is using the below technologies:
 
+* [React](https://facebook.github.io/react/) - for building the client-size app and components
 * [Webpack](https://webpack.github.io/) - for bundling and building
 * [Babel.js](https://babeljs.io/) - for compiling Es6 and JSX
 * [Mobx](https://mobx.js.org/) - for State management
-* [React](https://facebook.github.io/react/) - for building the client-size app (using resusable components)
 * [React Router](https://github.com/ReactTraining/react-router) - for client-side (browser) routing
 * [React Bootstrap](https://react-bootstrap.github.io/) - for building the UI / make the app responsive
+* [Lodash](https://lodash.com/) - for utility library
 * [ESLint](http://eslint.org/) - for ES6 linting using the [JavaScript Standard Style](http://standardjs.com/)
 
 ## Run locally

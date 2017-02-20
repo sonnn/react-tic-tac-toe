@@ -87,10 +87,11 @@ class GameStore {
         msg: ''
       }
     };
+    this.winner = null;
   }
 
   checkBoardForWinner () {
-    if (this.isBoardEmpty()) {
+    if (this.isBoardEmpty() && this.winner === null) {
       // If board is full and there is no winner, then it's a tie
       this.displayOutcome("It's a tie!");
     } else {
@@ -115,8 +116,8 @@ class GameStore {
         this.board[`pos${num1}`] === this.board[`pos${num3}`]
       ) {
         const winningMarker = this.board[`pos${num1}`];
-        const winner = this.selectPlayerFromMarker(winningMarker);
-        this.displayOutcome(`${winner} wins!`);
+        this.winner = this.selectPlayerFromMarker(winningMarker);
+        this.displayOutcome(`${this.winner} wins!`);
       }
     });
   }
