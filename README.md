@@ -8,7 +8,7 @@
 
 You can view the app [live from Github.io](http://tsevdos.github.io/react-tic-tac-toe). The game is using the below technologies:
 
-* [React](https://facebook.github.io/react/) - for building the client-size app and components
+* [React](https://facebook.github.io/react/) - for building the client-site app and components
 * [Webpack](https://webpack.github.io/) - for bundling and building
 * [Babel.js](https://babeljs.io/) - for compiling Es6 and JSX
 * [Mobx](https://mobx.js.org/) - for State management
