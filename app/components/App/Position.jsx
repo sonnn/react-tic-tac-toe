@@ -8,17 +8,18 @@ const iconStyle = {
   width: '100%',
   padding: '0.2em',
   textAlign: 'center',
-  background: 'rgba(0, 0, 0, 0.04)',
+  background: '#eee',
+  border: '1px solid #ccc',
   fontSize: '8em'
 };
 
 const Position = ({ pos, marker, handleMarkPosition }) =>
 (
-    <Glyphicon
-      style={iconStyle}
-      glyph={display(marker)}
-      onClick={handleMarkPosition.bind(null, pos)}
-    />
+  <Glyphicon
+    style={Object.assign(iconStyle, ({ color: marker === 'O' ? '#DB3A34' : '#197BBD' }))}
+    glyph={display(marker)}
+    onClick={handleMarkPosition.bind(null, pos)}
+  />
 );
 
 Position.propTypes = {

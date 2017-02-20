@@ -6,7 +6,7 @@
 
 ## App details
 
-You can view the app [live from Github.io](http://tsevdos.github.io/react-tic-tac-toe). The game is using the below technologies:
+You can view the app [live from Github.io](http://tsevdos-react-tic-tac-toe.surge.sh/). The game is using the below technologies:
 
 * [React](https://facebook.github.io/react/) - for building the client-site app and components
 * [Webpack](https://webpack.github.io/) - for bundling and building
