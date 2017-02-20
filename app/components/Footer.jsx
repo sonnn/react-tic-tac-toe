@@ -1,7 +1,7 @@
 import React from 'react'
 
 const style = {
-  marginTop: '1em'
+  marginTop: '1.2em'
 }
 
 const Footer = () =>
