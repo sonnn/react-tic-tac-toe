@@ -38,7 +38,7 @@ class GameStore {
     }
   }
 
-  constructor() {
+  constructor () {
     this.winner = null;
   }
 
@@ -94,7 +94,7 @@ class GameStore {
     this.winner = null;
   }
 
-  checkBoard() {
+  checkBoard () {
     // Check for a winning line
     this.winningLine();
 
