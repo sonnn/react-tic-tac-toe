@@ -1,8 +1,8 @@
-import React, { PropTypes } from 'react'
-import { observer } from 'mobx-react'
-import Board from './App/Board'
-import MarkerSelectionModal from './App/MarkerSelectionModal'
-import OutcomeModal from './App/OutcomeModal'
+import React, { PropTypes } from 'react';
+import { observer } from 'mobx-react';
+import Board from './App/Board';
+import MarkerSelectionModal from './App/MarkerSelectionModal';
+import OutcomeModal from './App/OutcomeModal';
 
 const App = observer(({
   board,
@@ -32,7 +32,7 @@ const App = observer(({
     <Board board={board} handleMarkPosition={handleMarkPosition} />
 
   </main>
-))
+));
 
 App.propTypes = {
   board: PropTypes.object.isRequired,
@@ -42,6 +42,6 @@ App.propTypes = {
   handleMarkersSelection: PropTypes.func.isRequired,
   handleMarkPosition: PropTypes.func.isRequired,
   handleResetGame: PropTypes.func.isRequired
-}
+};
 
-export default App
+export default App;

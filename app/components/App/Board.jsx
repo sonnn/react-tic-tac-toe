@@ -1,12 +1,12 @@
-import React, { PropTypes } from 'react'
-import Grid from 'react-bootstrap/lib/Grid'
-import Row from 'react-bootstrap/lib/Row'
-import Col from 'react-bootstrap/lib/Col'
-import Position from './Position'
+import React, { PropTypes } from 'react';
+import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+import Position from './Position';
 
 const rowStyle = {
   margin: '2em 0'
-}
+};
 
 const Board = ({ board, handleMarkPosition }) =>
 (
@@ -27,11 +27,11 @@ const Board = ({ board, handleMarkPosition }) =>
       <Col xs={4}><Position pos={9} marker={board.pos9} handleMarkPosition={handleMarkPosition} /></Col>
     </Row>
   </Grid>
-)
+);
 
 Board.propTypes = {
   board: PropTypes.object.isRequired,
   handleMarkPosition: PropTypes.func.isRequired
-}
+};
 
-export default Board
+export default Board;

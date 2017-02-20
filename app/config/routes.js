@@ -1,8 +1,8 @@
-import React from 'react'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import MainLayout from 'layouts/MainLayout'
-import AppContainer from 'containers/AppContainer'
-import { About } from 'components'
+import React from 'react';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import MainLayout from 'layouts/MainLayout';
+import AppContainer from 'containers/AppContainer';
+import { About } from 'components';
 
 const routes = (
   <Router history={browserHistory}>
@@ -11,6 +11,6 @@ const routes = (
       <Route path="about" component={About} />
     </Route>
   </Router>
-)
+);
 
-export default routes
+export default routes;

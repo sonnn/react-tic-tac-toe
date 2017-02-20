@@ -1,15 +1,15 @@
 function display (marker) {
   if (marker === 'X') {
-    return 'remove'
+    return 'remove';
   } else if (marker === 'O') {
-    return 'record'
+    return 'record';
   }
 
-  return 'unchecked'
+  return 'unchecked';
 }
 
 function isEmpty (pos) {
-  return pos === ' '
+  return pos === ' ';
 }
 
-export { display, isEmpty }
+export { display, isEmpty };

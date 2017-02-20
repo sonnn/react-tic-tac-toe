@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const aboutStyle = {
   fontSize: '1.4em'
-}
+};
 
 const About = () =>
 (
@@ -73,6 +73,6 @@ const About = () =>
     <p>Unfortunately I didn't have time to write tests (I had only one week to work this project and I was working on it only on afternoons/weekend because I was at work). Feel free to have a look, and of course run, the tests I wrote for my latest <a href="https://github.com/tsevdos/repocompare" target="_blank">react app</a> (it uses mobx as well). If I had the time, I would start the testing from the store and then continue to the AppConatiner (using <a href="https://facebook.github.io/jest/" target="_blank">Jest</a> and <a href="http://airbnb.io/enzyme/" target="_blank">Enzyme</a>). I wouln't spend much time on the presentational components since React Proptypes make excellent work on presentational components.</p>
 
   </div>
-)
+);
 
-export default About
+export default About;

@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router'
-import { LinkContainer } from 'react-router-bootstrap'
-import Navbar from 'react-bootstrap/lib/Navbar'
-import Nav from 'react-bootstrap/lib/Nav'
-import NavItem from 'react-bootstrap/lib/NavItem'
+import React from 'react';
+import { Link } from 'react-router';
+import { LinkContainer } from 'react-router-bootstrap';
+import Navbar from 'react-bootstrap/lib/Navbar';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
 
 const Header = () =>
 (
@@ -19,6 +19,6 @@ const Header = () =>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
-)
+);
 
-export default Header
+export default Header;

@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react'
-import Modal from 'react-bootstrap/lib/Modal'
-import Button from 'react-bootstrap/lib/Button'
-import Glyphicon from 'react-bootstrap/lib/Glyphicon'
+import React, { PropTypes } from 'react';
+import Modal from 'react-bootstrap/lib/Modal';
+import Button from 'react-bootstrap/lib/Button';
+import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
 const MarkerSelectionModal = ({ msg, show, handleMarkersSelection }) =>
 (
@@ -18,12 +18,12 @@ const MarkerSelectionModal = ({ msg, show, handleMarkersSelection }) =>
       </Button>
     </Modal.Footer>
   </Modal>
-)
+);
 
 MarkerSelectionModal.propTypes = {
   msg: PropTypes.string.isRequired,
   show: PropTypes.bool.isRequired,
   handleMarkersSelection: PropTypes.func.isRequired
-}
+};
 
-export default MarkerSelectionModal
+export default MarkerSelectionModal;
