@@ -38,6 +38,10 @@ class GameStore {
     }
   }
 
+  constructor() {
+    this.winner = null;
+  }
+
   @action setMarkersToPlayers (firstPlayerMarker, secondPlayerMarker) {
     this.markers.player1 = firstPlayerMarker;
     this.markers.player2 = secondPlayerMarker;
@@ -46,7 +50,7 @@ class GameStore {
   @action markPosition (index, marker) {
     this.board[`pos${index}`] = marker;
     this.changePlayerTurn();
-    this.checkBoardForWinner();
+    this.checkBoard();
   }
 
   @action changePlayerTurn () {
@@ -90,13 +94,13 @@ class GameStore {
     this.winner = null;
   }
 
-  checkBoardForWinner () {
+  checkBoard() {
+    // Check for a winning line
+    this.winningLine();
+
+    // If board is full and there is no winner, then it's a tie
     if (this.isBoardEmpty() && this.winner === null) {
-      // If board is full and there is no winner, then it's a tie
       this.displayOutcome("It's a tie!");
-    } else {
-      // Check for a winning line
-      this.winningLine();
     }
   }
 
